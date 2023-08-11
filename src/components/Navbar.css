@@ -1,0 +1,150 @@
+nav {
+	height: var(--navbar-height);
+	width: 100vw;
+	background-color: #0f3057;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	padding: 0 20px;
+
+	font-size: large;
+	font-weight: 400;
+	color: #f5f5f5;
+
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+	user-select: none;
+
+	position: fixed;
+}
+
+.navbar-nav {
+	width: fit-content;
+	display: flex;
+	gap: 18px;
+	align-items: center;
+}
+
+.has-dropdown {
+	align-items: center;
+}
+
+.has-dropdown a {
+	display: flex;
+	align-items: center;
+}
+
+.has-dropdown ul {
+	display: flex;
+	align-items: start;
+}
+
+.dropdown-services {
+	position: fixed;
+	background-color: #f5f5f5;
+	color: #0f3057;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+	top: var(--navbar-height);
+	border-radius: 0px 0px 8px 8px;
+}
+
+.navbar-nav a {
+	cursor: pointer;
+	padding: 8px 16px;
+	border-radius: 8px;
+}
+
+.navbar-nav a:hover {
+	background-color: #193e6b;
+}
+
+.dropdown-icon {
+	margin-left: 12px;
+	transition: transform 100ms;
+}
+
+.dropdown-icon-clicked {
+	margin-left: 12px;
+	transition: transform 100ms;
+	transform: rotate(180deg);
+}
+
+.dropdown-services ul {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	padding: 18px;
+}
+
+.dropdown-services a:hover {
+	background-color: #ececec;
+}
+
+.hamburger {
+	display: none;
+}
+/* MOBILE */
+
+/* .hamburger {
+	width: 48px;
+	height: 48px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	padding: 16px;
+}
+
+.hamburger:hover {
+	background-color: #193e6b;
+	border-radius: 8px;
+}
+
+.meat {
+	height: 2px;
+	color: #f5f5f5;
+	background-color: #f5f5f5;
+} */
+
+/* @media only screen and (max-width: 800px) {
+	.navbar-nav {
+		display: none;
+	}
+
+	nav .logo-container {
+		width: 100%;
+		height: var(--navbar-height);
+
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.hamburger {
+		width: 16px;
+		height: 16px;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	.menu-items.hamburger-active {
+		display: flex;
+		flex-direction: column;
+		gap: 24px;
+		padding: 24px;
+	}
+
+	.nav.hamburger-active {
+		flex-direction: column;
+		height: auto;
+	}
+
+	.dropdown.hamburger-active {
+		position: relative;
+	}
+} */
